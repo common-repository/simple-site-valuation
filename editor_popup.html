@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>DomOf.com - Simple Site Valuation Badge</title>
+	<script type="text/javascript" src="../../../wp-includes/js/tinymce/tiny_mce_popup.js?ver=3241-1141"></script>
+	<script type="text/javascript" src="../../../wp-includes/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="editor_insert.js"></script>
+
+	<style type="text/css">
+		body {margin:0; padding:10px; background-color:#EEE;}
+		form {margin:0; padding:0;}
+		form label {width:90px; height:25px; line-height:25px; display:block; float:left; margin:0 10px 0 0; padding:0 0 0 5px; font-size:12px; font-weight:bold; background-color:#FFF;}
+		form input {width:180px; height:25px; line-height:25px; display:block; border:1px solid #333;}
+		form select {width:180px; height:25px; line-height:25px; display:block; border:1px solid #333;}
+		form option {height:25px; line-height:25px; display:block;}
+		form input[type="checkbox"] {width:auto; height:auto;}
+		form input[type="submit"] {float:left; margin:0 10px 0 0!important;}
+		form p {display:block; margin:0; padding:5px; font-size:10px; background-color:#FFF; border-top:1px dotted #999; border-bottom:1px dotted #999;}
+    </style>
+
+</head>
+<body>
+
+	<form action="#">
+
+		<label>Link:</label>
+		<input type="text" id="simpleBadge_link" name="simpleBadge_link" value="" />
+
+		<br />
+
+		<label>Target:</label>
+		<select id="simpleBadge_target" name="simpleBadge_target">
+				<option value="">- Not Set -</option>
+				<option value="_self">Open link in the same window</option>
+				<option value="_blank">Open link in a new window</option>
+				<option value="_parent">Open link in a parent window.</option>
+				<option value="_top">Open link in a top Frame</option>
+		</select>
+
+		<br />
+
+		<label>No Follow:</label>
+		<input type="checkbox" id="simpleBadge_nofollow" name="simpleBadge_nofollow" value="1" />
+
+		<br />
+		<p>* please make sure the url report exists on <a href="http://domof.com" target="_blank">http://domof.com</a></p>
+		<br />
+
+		<input type="submit" id="insert" name="insert" value="Insert" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" />
+
+	</form>
+
+</body>
+</html>
